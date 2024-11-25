@@ -123,9 +123,26 @@
                     </section>
 
                     <!-- section story -->
-                    <section class="scstory pt-32 ct-flex-center">
-                        <div class="ct-container ct-flex-center">
-                            <div class="max-w-[658px] text-center">
+                    <section class="scstory pt-32 flex flex-col">
+                        <h2 class="ct-title text-textcolor-500">Featured Mugs</h2>
+                        <div class="ct-container flex gap-9 lg:gap-5 mt-24 flex-col lg:flex-row">
+                            <div class="basis-1/2">
+                                <video
+                                    autoplay
+                                    muted
+                                    loop
+                                    class="h-full w-full object-cover min-h-[350px]"
+                                >
+                                    <source
+                                        class="h-full w-full"
+                                        src="./videos/2853793-uhd_3840_2160_24fps.mp4"
+                                        type="video/mp4"
+                                    />
+                                </video>
+                            </div>
+                            <div
+                                class="max-w-[658px] basis-1/2 lg:pl-6 text-center lg:text-left mx-auto"
+                            >
                                 <h2 class="text-[28px] leading-10 text-textcolor-500">
                                     Even the all-powerful Pointing has no control about the blind
                                     texts.
@@ -557,7 +574,7 @@
                     </section>
                     <!-- section background coffee -->
                     <section
-                        class="flex-col flex scbackgroundcoffee mt-32 bg-[url('./img/bg-section.jpg')] bg-cover bg-center bg-fixed h-[340px]"
+                        class="flex-col flex scbackgroundcoffee mt-32 bg-[url('./img/bg-section.jpg')] bg-cover bg-center bg-fixed h-[400px] lg:h-[500px] w-screen relative left-[calc(-50vw_+_50%)]"
                     ></section>
 
                     <!-- section blogs -->

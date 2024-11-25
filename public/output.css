@@ -580,6 +580,10 @@ video {
   left: 50%;
 }
 
+.left-\[calc\(-50vw_\+_50\%\)\]{
+  left: calc(-50vw + 50%);
+}
+
 .top-\[var\(--top-position-menu\)\]{
   top: var(--top-position-menu);
 }
@@ -713,8 +717,16 @@ video {
   height: 5rem;
 }
 
+.h-\[400px\]{
+  height: 400px;
+}
+
 .min-h-\[54px\]{
   min-height: 54px;
+}
+
+.min-h-\[350px\]{
+  min-height: 350px;
 }
 
 .w-\[111px\]{
@@ -727,6 +739,18 @@ video {
 
 .w-screen{
   width: 100vw;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
+.w-\[calc\(50\%-10px\)\]{
+  width: calc(50% - 10px);
+}
+
+.w-\[calc\(50\%-20px\/2\)\]{
+  width: calc(50% - 20px / 2);
 }
 
 .max-w-4xl{
@@ -745,6 +769,10 @@ video {
   max-width: 1440px;
 }
 
+.flex-1{
+  flex: 1 1 0%;
+}
+
 .grow{
   flex-grow: 1;
 }
@@ -759,6 +787,10 @@ video {
 
 .basis-2\/6{
   flex-basis: 33.333333%;
+}
+
+.basis-1\/2{
+  flex-basis: 50%;
 }
 
 .-translate-x-1\/2{
@@ -790,6 +822,10 @@ video {
   flex-direction: column-reverse;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
 }
@@ -808,6 +844,10 @@ video {
 
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-9{
+  gap: 2.25rem;
 }
 
 .self-start{
@@ -884,6 +924,11 @@ video {
   background-repeat: no-repeat;
 }
 
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -939,6 +984,14 @@ video {
 
 .pt-height-header{
   padding-top: 5rem;
+}
+
+.pl-5{
+  padding-left: 1.25rem;
+}
+
+.pl-0{
+  padding-left: 0px;
 }
 
 .text-center{
@@ -1731,6 +1784,10 @@ video {
     height: 280px;
   }
 
+  .lg\:h-\[500px\]{
+    height: 500px;
+  }
+
   .lg\:w-\[160px\]{
     width: 160px;
   }
@@ -1780,6 +1837,10 @@ video {
     justify-content: center;
   }
 
+  .lg\:gap-5{
+    gap: 1.25rem;
+  }
+
   .lg\:px-gap-page{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1787,6 +1848,18 @@ video {
 
   .lg\:pl-14{
     padding-left: 3.5rem;
+  }
+
+  .lg\:pl-0{
+    padding-left: 0px;
+  }
+
+  .lg\:pl-5{
+    padding-left: 1.25rem;
+  }
+
+  .lg\:pl-6{
+    padding-left: 1.5rem;
   }
 
   .lg\:text-left{
