@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ct = custom */
+
+/* root */
+:root {
+    --top-position-menu: -260%;
+}
+/* custom scroll */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #c89f94;
+}
+
+/*================== COMMON  ==================*/
+.ct-flex-center {
+    @apply flex justify-center items-center;
+}
+
+/*================== GAP ================== */
+.ct-gap-page {
+    @apply px-gap-page-res lg:px-gap-page;
+}
+
+/*================== FONT  ==================*/
+.ct-font {
+    @apply text-base font-Karla text-textcolor-200;
+}
+/*================== CONTAINER  ==================*/
+.ct-container {
+    @apply lg:max-w-[calc(940px_+_theme(spacing.gap-page)*2)] w-full max-w-[calc(940px_+_theme(spacing.gap-page-res))]  ct-gap-page mx-auto;
+}
+
+/*================== TRANSITION  ==================*/
+.ct-transition-duration {
+    @apply transition-all duration-300 ease-linear;
+}
+/* after transition */
+.ct-after-transition-duration {
+    @apply after:transition-all after:duration-300 after:ease-linear;
+}
+/* before transition */
+.ct-before-transition-duration {
+    @apply before:transition-all before:duration-300 before:ease-linear;
+}
+
+/*================ BADGE ================*/
+.ct-badge {
+    @apply rounded-full px-1;
+}
+
+/*================ ICON ================*/
+.ct-icon {
+    @apply h-6 w-5 object-contain;
+}
+
+/*================ BUTTON ================*/
+.ct-button {
+    @apply leading-tight hover:opacity-90 hover:shadow transition-all duration-300 ease-linear h-[54px] px-[24px] ct-flex-center font-bold uppercase text-xs tracking-[2px];
+}
+
+/*============= HEADER MENU ============== */
+/* active menu */
+.ct-header-menu-active {
+    @apply top-height-header;
+}
+.ct-header-menu {
+    @apply font-semibold cursor-pointer py-4 px-gap-header-menu-res lg:px-gap-header-menu relative 
+     hover:text-textcolor-500  ct-transition-duration 
+     after:absolute after:h-px after:rounded-full after:bottom-3
+      after:left-gap-header-menu-res lg:after:left-gap-header-menu after:w-0 
+     hover:after:w-[calc(100%_-_theme("spacing.gap-header-menu-res")_*_2)] 
+     lg:hover:after:w-[calc(100%_-_theme("spacing.gap-header-menu")_*_2)]
+    after:bg-coffee-200 block after:block ct-after-transition-duration;
+}
+
+/*============= TITLE ============= */
+.ct-title {
+    @apply relative uppercase  tracking-[2px] text-xs text-center mx-auto inline-block font-bold opacity-60 px-[50px] 
+    after:w-[30px] after:h-px after:absolute after:top-1/2 after:left-0 after:-translate-y-1/2 after:bg-textcolor-200
+    before:w-[30px] before:h-px before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:bg-textcolor-200;
+}
+
+/*============= PRODUCT ============= */
+/* display product */
+/* featured product */
+.ct-display-featured-product {
+    @apply flex gap-5 flex-wrap md:flex-nowrap;
+}
+
+/* more product */
+.ct-display-more-product {
+    /* @apply flex gap-5 flex-wrap; */
+    @apply grid gap-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1;
+}
+
+/* item */
+.ct-item-featured-product {
+    @apply md:w-1/2 w-full;
+}
+.ct-item-more-product {
+    /* @apply lg:w-[calc(100%_/_3_-_40px_/_3)] md:w-[calc(100%_/_2_-_40px_/_3)]  w-full; */
+    @apply h-full;
+}
+/* tag on sale */
+.ct-tag-product {
+    @apply ct-transition-duration absolute z-30 top-0 capitalize text-coffee-400 font-bold  w-[90px] h-10 right-4 top-4 ct-flex-center opacity-0 bg-white;
+}
+/* button  */
+.ct-button-product {
+    @apply absolute z-30 bottom-0 w-11/12 left-1/2 -translate-x-1/2 ct-button bg-white opacity-0;
+}
+/* img  */
+.ct-img-product {
+    @apply h-full w-full object-cover;
+}
+/* opacity */
+.ct-opacity-product {
+    @apply bg-black w-full h-full opacity-0 absolute ct-transition-duration;
+}
+
+/* content product */
+.ct-content-product {
+    @apply pt-9 pb-6 px-5 text-center text-xl;
+}
+.ct-title-product {
+    @apply text-textcolor-500 hover:text-coffee-400 ct-transition-duration;
+}
+
+/* =========== FOOTER ============== */
+.ct-footer-title {
+    @apply text-xs uppercase tracking-[2px] font-bold opacity-65 pt-3;
+}
+.ct-footer-item {
+    @apply capitalize py-1 block hover:text-coffee-400 ct-transition-duration;
+}
