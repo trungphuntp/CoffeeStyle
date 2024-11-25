@@ -62,3 +62,16 @@ const validateFormSubscride = () => {
 window.addEventListener("load", (e) => {
     validateFormSubscride();
 });
+
+// SCROLL
+const lenis = new Lenis();
+function handleLenisScroll() {
+    lenis.on("scroll", (e) => {});
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+}
+window.addEventListener("load", handleLenisScroll());

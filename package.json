@@ -11,7 +11,9 @@
     "author": "phunguyen",
     "license": "ISC",
     "devDependencies": {
+        "lenis": "^1.1.16",
         "live-server": "^1.2.2",
         "tailwindcss": "^3.4.15"
-    }
+    },
+    "dependencies": {}
 }
